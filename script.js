@@ -23,9 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
             images.push({
                 id: i,
                 url: `images/zeus (${i}).jpg`,
-                alt: `Zeus image ${i}`,
-                title: `Zeus Image #${i}`,
-                description: `Powerful depiction of Zeus ${i}`
+                alt: `Zuez image ${i}`,
+                title: `Zuez Image #${i}`,
+                description: `Explicit designs of Zuez ${i}`
             });
         }
         return images;
