@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeus Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="gallery-header">
+        <div class="header-content">
+            <h1><i class="fas fa-bolt"></i> Zeus Gallery</h1>
+            <p class="subtitle">147 powerful images of the Thunder God</p>
+            <div class="controls">
+                <button id="shuffle-btn" class="glass-btn">
+                    <i class="fas fa-random"></i> Shuffle
+                </button>
+                <select id="layout-select" class="glass-btn">
+                    <option value="grid"><i class="fas fa-th"></i> Grid</option>
+                    <option value="masonry"><i class="fas fa-th-large"></i> Masonry</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="gallery-main">
+        <div class="gallery" id="gallery"></div>
+        <div class="loading" id="loading">
+            <div class="loader"></div>
+            <p>Loading images... <span id="loaded-count">0</span>/147</p>
+        </div>
+    </main>
+
+    <div class="modal" id="image-modal">
+        <span class="close-btn" id="close-modal">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div class="modal-caption" id="modal-caption"></div>
+    </div>
+
+    <footer class="gallery-footer">
+        <p>© 2025 Zeus Gallery | All images are property of Zeus</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
